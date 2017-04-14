@@ -16,4 +16,8 @@ public class UserService {
     public List<user> getAllUsers() {
         return userRepository.findAll();
     }
+
+    public List<user> getUsersByName(String name) {
+        return userRepository.findByName(name);
+    }
 }
